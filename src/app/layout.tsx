@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, M_PLUS_Rounded_1c } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 
-const sans = M_PLUS_Rounded_1c({
+const sans = Manrope({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
 });
 
-const serif = Cormorant_Garamond({
+const serif = Fraunces({
   variable: "--font-serif",
   subsets: ["latin"],
+  style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
 });
 
