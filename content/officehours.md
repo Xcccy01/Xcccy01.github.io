@@ -1,26 +1,25 @@
 ---
 title: "Office Hours"
-date: 2024-05-08
+date: 2026-03-28
 hidemeta: true
-description: "Schedule and location for Professor Dr von Igelfeld's office hours."
+description: "联系与交流方式占位页。"
 ---
-
---- 
-#### Schedule
-
-Office hours take place on Wednesday at 10am.
 
 ---
 
-#### Location
+#### 联系方式
 
-By default meetings are in my office. I am also available for virtual meetings on Zoom.
+邮箱：hello@xcccy.site  
+GitHub：@Xcccy01
 
 ---
 
-#### Meeting material
+#### 交流主题
 
-+ If we are meeting to discuss research, please send me a written description of the work that you would like to discus. 
-+ Presentation slides or paper draft are perfectly fine. 
-+ If you do not have those, please send a one-page description of the research. 
-+ Please send me the material by 8pm on the evening prior of our meeting.
+这里后面可以写欢迎交流的内容，例如 AI、LLM、Web 全栈项目、开源协作或技术学习。轻松一点的话题也可以保留，比如拿铁、日常开发流程和个人项目习惯。
+
+---
+
+#### 备注
+
+这一页目前只是模板页面的中文占位版本，后续可以改成更正式的联系说明或合作邀请页面。

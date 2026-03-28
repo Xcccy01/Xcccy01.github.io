@@ -1,132 +1,41 @@
 ---
-title: "List of Irregular Verbs Across Romance Languages" 
-date: 2013-03-07
-tags: ["Romance languages","philology","irregular verbs","Portuguese","Italian","French","Spanish","simulations","dataset","python"]
-author: ["Patrick Fitzcarron O'Leary","Florianus Prinzel","Walter Schoeffler-Henschell","Detlev Amadeus Unterholzer", "Dieter Vogelsang","Moritz-Maria von Igelfeld"]
-description: "This dataset contains all irregular verbs in known Romance languages."
-summary: "This dataset contains all irregular verbs in known Romance languages."
+title: "GitHub 开源作品占位"
+date: 2026-03-28
+tags: ["GitHub", "开源", "项目", "AI", "Web 全栈"]
+author: ["Xcccy"]
+description: "这里介绍一个已经公开在 GitHub 上的开源作品。"
+summary: "这里介绍一个已经公开在 GitHub 上的开源作品，可以放项目简介、技术栈和使用方式。"
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "GitHub repository"
+    URL: "https://github.com/Xcccy01"
+    Text: "GitHub"
 showToc: true
 disableAnchoredHeadings: false
+---
+
+## 项目说明
+
+这里先用中文占位，后续可以替换成你已经发布在 GitHub 上的开源作品。建议这一页优先说明项目是做什么的、解决什么问题、核心技术栈是什么，以及你希望别人如何使用或参与。
 
 ---
 
-## Overview
+## 可以展示的信息
 
-This dataset contains all irregular verbs in [all known Romance languages](http://www.alexandermccallsmith.com/series/von-igelfeld-series)—including Portugese, Spanish, French, and Italian. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
----
-
-## View dataset
-
-+ Irregular verbs in Portugese: [data](https://github.com/pmichaillat/feru)
-+ Irregular verbs in Italian: [data](https://github.com/pmichaillat/unemployment-gap)
-+ Irregular verbs in French: [data](https://github.com/pmichaillat/job-rationing)
-+ Irregular verbs in Spanish: [data](https://github.com/pmichaillat/countercyclical-multiplier)
++ 项目背景和目标
++ 使用到的 AI 或 LLM 能力
++ Web 全栈技术栈
++ 运行方式和部署说明
++ 后续开发计划
 
 ---
 
-## Source of data
+## 代码与资源
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
++ GitHub 仓库链接占位：后续替换成真实仓库地址
++ 演示页面链接占位：后续替换成真实预览地址
++ 数据或配置说明占位：后续根据项目情况补充
 
 ---
 
-## Using data with Python
+## 备注
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Start Python:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.
-
-```python
-import numpy as np
-import pandas as pd
-```
-
-### Open the file:
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat `data.csv`.
-
-```python
-file_path = 'data.csv'
-with open(file_path, 'r') as file:
-```
-
-### Read data:
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur.
-
-```python
-    lines = file.readlines()
-```
-
-### Parse and process data:
-
-Duis aute `line_data` irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur `data.extend`.
-
-```python
-data = []
-for line in lines:
-    line_data = line.strip().split(',')  # Split the line into a list of values
-    line_data = [float(value) for value in line_data]  # Convert values to floats
-    data.extend(line_data)  # Extend the main list with values from the line
-```
-
-#### Compute summary statistics using NumPy:
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum: `data_array`. 
-
-```python
-data_array = np.array(data)  # Convert the list to a NumPy array
-mean = np.mean(data_array)
-median = np.median(data_array)
-std_dev = np.std(data_array)
-min_value = np.min(data_array)
-max_value = np.max(data_array)
-```
-
-#### Display summary statistics:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat `print`.
-
-```python
-print(f"Mean: {mean}")
-print(f"Median: {median}")
-print(f"Standard Deviation: {std_dev}")
-print(f"Minimum Value: {min_value}")
-print(f"Maximum Value: {max_value}")
-```
-
----
-
-## Description of simulation parameters
-
-| Parameter |   Value   |  Language  | Time period |           Description            |
-| :-------: | :-------: | ---------- | :---------: | :------------------------------: |
-|  $\alpha$ |   $1/2$   | French     |  1930–1954  |         Tempor dolor in          |
-| $\lambda$ |   $e/2$   | French     |  1930–1954  |       Fugiat sint occaecat       |
-|  $\gamma$ |  $\ln(3)$ | Spanish    |  1833–1954  |      Duis officia deserunt       |
-|  $\omega$ | $10^{-4}$ | Italian    |  1930–1994  | Excepteur et dolore magna aliqua |
-|  $\sigma$ |   $1.5$   | Portuguese |  1990–2023  |         Lorem culpa qui          |
-|  $\chi^2$ |  $\pi^2$  | Portuguese |  1990–2023  |         Labore et dolore         |
+如果你后面只想重点展示一个代表作，这一页就可以直接承担“首页最重要跳转入口”的角色。

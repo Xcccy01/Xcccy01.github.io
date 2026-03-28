@@ -1,52 +1,35 @@
 ---
-title: "Your Inner Hedgehog" 
-date: 2021-04-06
-tags: ["social psychology","inner hedgehog","academia","experimental psychology","invasive thoughts"]
-author: ["Hilda Schreiber-Ziegler", "Moritz-Maria von Igelfeld"]
-description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021." 
-summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure." 
+title: "Web 全栈系统占位"
+date: 2026-03-28
+tags: ["Web 全栈", "系统设计", "前后端", "部署"]
+author: ["Xcccy"]
+description: "这里预留给一个 Web 全栈系统的完整介绍。"
+summary: "这里预留给一个 Web 全栈系统的完整介绍，包括功能、架构和上线过程。"
 cover:
     image: "paper3.png"
-    alt: "Vizualisation of an inner hedgehog"
+    alt: "Web 全栈系统占位"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Socio-Experimental Psychology"
-
+    URL: "https://github.com/Xcccy01/Xcccy01.github.io"
+    Text: "站点仓库"
 ---
 
 ---
 
-##### Download
+##### 下载占位
 
-+ [Paper](paper3.pdf)
-+ [Raw data](https://github.com/pmichaillat/michez-rule)
-
----
-
-##### Abstract
-
-Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique. Pellentesque eget ipsum ut dui laoreet congue ut nec nulla. Nulla facilisi. Sed consequat, odio ac aliquet tempor, turpis augue auctor mauris, at malesuada sem dolor eget libero. Nullam iaculis malesuada risus, id fringilla quam sagittis ac. Fusce congue vel ex et facilisis. Integer volutpat eros ut urna efficitur, id efficitur sapien pharetra.
++ [正文占位](paper3.pdf)
++ [原始数据或仓库链接占位](https://github.com/Xcccy01)
 
 ---
 
-##### Citation
+##### 摘要占位
 
-Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. "Your Inner Hedgehog." *Journal of Socio-Experimental Psychology* 131 (2): 1299–1302.
-
-```latex
-@article{SZI21,
-author = {Hilda Schreiber-Ziegler and Moritz-Maria von Igelfeld},
-year = {2021},
-title ={Your Inner Hedgehog},
-journal = {Journal of Socio-Experimental Psychology},
-volume = {131},
-number = {2},
-pages = {1299--1302}}
-```
+这里适合放你做过的 Web 全栈系统，例如一个含前端页面、后端服务、数据库和部署流程的完整项目。正文可以重点写系统设计、功能边界、技术选型，以及你在实现中遇到的关键问题。
 
 ---
 
-##### Related material
+##### 相关材料
 
-+ [Nontechnical summary](https://www.alexandermccallsmith.com/book/your-inner-hedgehog)
++ 非技术介绍占位
++ 在线预览地址占位

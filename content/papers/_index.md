@@ -1,4 +1,4 @@
 ---
 title: "Papers"
-description: "Preprints and articles by Professor Dr von Igelfeld."
+description: "这里放研究方向、论文草稿、项目记录或正式文章。"
 ---

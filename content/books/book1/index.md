@@ -1,77 +1,46 @@
 ---
-title: "Portugese Irregular Verbs" 
-date: 1997-01-01
-tags: ["Portugese","irregular verbs","philology"]
-author: ["Moritz-Maria von Igelfeld"]
-description: "This book discusses Portugese irregular verbs in great details."
-summary: "This book discusses Portugese irregular verbs in great details."
+title: "长期写作占位"
+date: 2026-03-28
+tags: ["AI", "LLM", "Web 全栈", "学习记录"]
+author: ["Xcccy"]
+description: "这里预留给较长篇幅的中文写作，例如专题笔记、学习手册或系统整理。"
+summary: "这里预留给较长篇幅的中文写作，例如专题笔记、学习手册或系统整理。"
 cover:
     image: "book1.png"
-    alt: "Portugese Irregular Verbs"
+    alt: "长期写作占位"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Regensburg University Press"
+    URL: "https://github.com/Xcccy01/Xcccy01.github.io"
+    Text: "站点仓库"
 showToc: false
 disableAnchoredHeadings: false
-
 ---
 
 ---
 
-#### Description
+#### 内容说明
 
-This book discusses Portugese irregular verbs in great details. It is the seminal work on Romance philology.[^1] The book is the result of years of research into the etymology and vagaries of Portuguese verbs.[^2] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-[^1]: The acknowledged aim of the book is to dwarf all other books in the field.
-[^2]: As a result of such intensive research, the book's length is almost twelve hundred pages.
+这里先放一本“长期写作”的中文占位内容，后续可以替换成你对 AI、LLM、Web 全栈开发的系统整理，也可以放成长篇笔记、项目复盘或者面向外部读者的技术手册。个人表达层面也可以保留一些轻松信息，例如喜欢喝拿铁，让页面不至于只有技术标签。
 
 ---
 
-#### Praise
+#### 适合放什么
 
-> There is nothing more to be said on this subject. Nothing – Anonymous reviewer
-
----
-
-#### View
-
-+ [Chapter 1: History of the Portuguese language](chapter1.pdf)
-+ [Chapter 2: Review of regular verbs](chapter2.pdf)
-+ [Chapter 3: Analysis of irregular verbs](chapter3.pdf)
++ 本科阶段的研究兴趣整理
++ 大语言模型相关的学习路线
++ Web 全栈项目开发经验总结
++ GitHub 开源作品的完整设计说明
 
 ---
 
-#### Excerpt from Chapter 1: Basic mathematical results from Portuguese philology
+#### 章节占位
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit $x\in \mathbb{N}$. Proin ac libero nec eros accumsan sagittis: $x^\ast = \max f(x)$. Fusce gravida $4 \ln(x+y) =4 \int \ln(x^2)dx$, lectus nec aliquet malesuada, augue dui lacinia velit, eget ullamcorper lorem lorem id turpis. Nam interdum est id venenatis fermentum: . Nullam fermentum, arcu eu luctus fermentum, felis orci pretium mi, eu bibendum ligula neque in metus. 
-
-$$1+\lambda\exp{\frac{\beta}{\alpha^2}} = \max_{t\in\mathbb{R}}(x(t)-y(t)+z(t)^2).$$
-
-Nulla facilisi. Phasellus pharetra ligula sit amet diam viverra, sed scelerisque ligula cursus. Curabitur sit amet libero eu velit fringilla vulputate, $2\ln(x)$. Suspendisse potenti. Quisque imperdiet arcu ac nibh gravida, id posuere ligula efficitur. Curabitur posuere, dui at finibus viverra, felis justo pulvinar urna, id finibus sem purus eget orci.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vel neque at lorem fermentum tincidunt: $<x,y> = 2x^2 + \mathcal{A}$. Etiam volutpat, risus at aliquet varius, sapien quam vulputate lectus, id ultrices lorem arcu ut magna. Sed malesuada scelerisque dignissim. Aliquam erat volutpat. Proin efficitur tincidunt nulla, a convallis magna cursus sit amet. Donec eget convallis libero. Pellentesque tincidunt nunc et nisi lacinia, quis auctor lorem suscipit: 
-
-$$2\exp(\gamma) = 2\exp(\zeta/3) = 2\exp(\kappa).$$
-
-Praesent at eros a sapien sagittis scelerisque at a nulla. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus congue vestibulum nisl, vitae accumsan est. Suspendisse potenti. In ut nunc ac quam congue cursus. Duis fermentum hendrerit eros, ut auctor velit pharetra ut. Nulla facilisi. Cras at convallis purus, a convallis mauris. Donec id est vel ipsum hendrerit laoreet.
++ [第一章占位](chapter1.pdf)
++ [第二章占位](chapter2.pdf)
++ [第三章占位](chapter3.pdf)
 
 ---
 
-#### Citation
+#### 备注
 
-Moritz-Maria von Igelfeld. 1997. *Portugese Irregular Verbs*. Regensburg, Germany: Regensburg University Press. http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs.
-
-```latex
-@book{I97,
-author = {Moritz-Maria von Igelfeld},
-year = {1997},
-title = {Portugese Irregular Verbs},
-publisher = {Regensburg University Press},
-address = {Regensburg, Germany},
-url = {http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs}}
-```
+目前主页采用模板自带的资源文件，这一页先只替换文本内容，不改封面图和附件命名。等你后面开始正式填内容，再把附件和图片换成你自己的材料即可。

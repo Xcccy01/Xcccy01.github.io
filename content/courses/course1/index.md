@@ -1,6 +1,6 @@
 ---
-title: "Lectures at the Villa of Reduced Circumstances"
-date: 2003-03-10
+title: "AI 与 LLM 学习路线占位"
+date: 2026-03-28
 aliases: 
     - /courses/course2/slides4.pdf
     - /courses/course2/slides1.pdf
@@ -15,106 +15,49 @@ aliases:
     - /courses/course2/quiz3.pdf
     - /courses/course2/quiz4.pdf
     - /courses/course1/ps1.pdf
-tags: ["Romance languages","philology","irregular verbs","Spanish","Portuguese"]
-author: "Moritz-Maria von Igelfeld"
-description: "This graduate course presents classical results in Romance philology." 
-summary: "This graduate course presents classical results in Romance philology. it focuses especially on Portugese and Spanish irregular verbs." 
+tags: ["AI", "LLM", "学习路线", "本科生"]
+author: "Xcccy"
+description: "这里可以放面向本科阶段的 AI 与 LLM 学习路线。"
+summary: "这里可以放面向本科阶段的 AI 与 LLM 学习路线，逐步整理基础知识、项目实践和后续方向。"
 cover:
     image: "course1.png"
-    alt: "Villa of Reduced Circumstances"
+    alt: "AI 与 LLM 学习路线占位"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Course portal"
+    URL: "https://github.com/Xcccy01/Xcccy01.github.io"
+    Text: "站点仓库"
 showToc: true
 disableAnchoredHeadings: false
-
 ---
 
-## Introduction
+## 课程说明
 
-This course covers research topics related to Romance philology. It focuses especially on Portugese and Spanish irregular verbs. It tries to answer several questions: 
+这一页先用中文占位，后面可以整理成一条完整的 AI 与 LLM 学习路线。站点主人的背景信息是四川成都本科生，当前关注 AI、LLM 和 Web 全栈，因此这一页适合放学习顺序、资料整理和阶段目标。
 
-+ Why are there irregular verbs? 
-+ How are Portuguese irregular verbs different from Spanish irregular verbs? 
-+ What is the role of Latin and Greek in these irregularities? 
-+ What about irregular verbs in other Romance languages?
-    + Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. 
-    + Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    + Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    + Excepteur sint occaecat cupidatat non proident.
-    
-Sunt in culpa qui officia deserunt mollit anim id est laborum.
+## 第一部分：基础能力
 
-## Part 1: Review of Romance languages
+这里可以放数学基础、Python、深度学习基础、模型训练基本概念，以及入门阶段最值得掌握的核心内容。
 
-This section reviews Romance languages. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### 资料占位
 
-##### Lecture videos
++ [讲义占位 1](lecture1.pdf)
++ [讲义占位 2](lecture2.pdf)
 
-+ [Lecture video 1](https://youtu.be/3MZeJED2yns) – This is a first lecture video.
-+ [Lecture video 2](https://youtu.be/8ihJsf-AXdA) – This is a another lecture video.
-+ [Lecture video 3](https://youtu.be/79MSNfp1rw0) – This is a third lecture video. It is quite short.
+##### 说明
 
-##### Lecture notes
+后续可以把这一部分拆成“先学什么、为什么学、推荐到什么程度”的结构，让页面更适合作为公开导航页。
 
-+ [Lecture note 1](lecture1.pdf)
+## 第二部分：大语言模型
 
-##### Readings
+这里可以放提示词工程、推理流程、微调方法、RAG、工具调用、Agent 工作流，以及你自己在学习和实践中真正关注的问题。
 
-+ [Paper 1](https://pascalmichaillat.org/1.pdf) – This is a first paper to read. (Further results are in the [online appendix](https://pascalmichaillat.org/1a.pdf).)
-+ [Paper 2](https://pascalmichaillat.org/2.pdf) – This paper builds on the first one.
-+ [Paper 3](https://pascalmichaillat.org/4.pdf) – This paper is more complex.
+##### 可以补充的内容
 
-## Part 2: Portugese irregular verbs
++ 模型使用经验
++ 评测方法记录
++ 开源框架试用笔记
++ 小项目链接和复盘
 
-This section introduces Portugese irregular verbs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## 第三部分：项目实践
 
-##### Lecture videos
-
-+ [Lecture video 4](https://youtu.be/IZI0_WwIyb8) - Short overview of the Portugese language.
-+ [Lecture video 5](https://youtu.be/Qz7CCB1-gu8) - History of irregular verbs.
-+ [Lecture video 6](https://youtu.be/79MSNfp1rw0) - Main Portugese irregular verbs.
-
-##### Lecture notes
-
-+ [Lecture note 2](lecture2.pdf)
-
-##### Readings
-
-+ [Paper 4](https://pascalmichaillat.org/3.pdf) – This paper computes things. (Details about the simulations are presented in the paper's [online appendix](https://pascalmichaillat.org/3a.pdf).)
-+ [Paper 5](https://pascalmichaillat.org/5.pdf) – This paper proves things. (The paper's [online appendix](https://pascalmichaillat.org/5a.pdf) contains long proofs and extensions of the results.)
-
-
-## Part 3: Spanish irregular verbs
-
-This section quickly discusses irregular verbs in Spanish. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-##### Lecture videos
-
-+ [Lecture video 7](https://youtu.be/pIS8-mXG1oY)
-+ [Lecture video 8](https://youtu.be/FUaeNM8_fxs)
-+ [Optional lecture video](https://youtu.be/xjHVrx7jfdY)
-
-##### Basic readings
-
-+ [Paper 6](https://pascalmichaillat.org/10.pdf) ([online appendix](https://pascalmichaillat.org/10a.pdf))
-+ [Paper 7](https://pascalmichaillat.org/11.pdf) ([online appendix](https://pascalmichaillat.org/11a.pdf))
-
-##### Advanced readings
-
-+ [Paper 8](https://pascalmichaillat.org/12.pdf)
-+ [Paper 9](https://pascalmichaillat.org/13.pdf)
-
-## Conclusion
-
-This section concludes by comparing Portuguese and Spanish irregular verbs to irregular verbs in other Romance languages. 
-
-> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst. Quisque non felis. Nullam vulputate libero quis ligula. Fusce scelerisque suscipit sapien. Suspendisse commodo ullamcorper magna. 
-> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+这里适合放和 GitHub 开源作品相关的内容，例如项目背景、技术选型、前后端结构、部署方式，以及后续迭代计划。

@@ -1,4 +1,4 @@
 ---
 title: "Data"
-description: "Datasets on various philological topics."
+description: "这里放数据、代码、实验材料和项目资源。"
 ---

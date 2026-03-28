@@ -1,4 +1,4 @@
 ---
 title: "Books"
-description: "Books by Professor Dr von Igelfeld's."
+description: "这里放较长的中文写作、专题整理或学习手册。"
 ---

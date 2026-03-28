@@ -1,4 +1,4 @@
 ---
 title: "Courses"
-description: "Courses on philology by Professor Dr von Igelfeld and esteemed colleagues. For undergraduate and graduate students."
+description: "这里放课程、教程、分享提纲或学习路线。"
 ---
