@@ -1,26 +1,41 @@
-const brewNotes = [
+const tastingNotes = [
   {
-    label: "Research",
-    title: "Slow, careful work on reasoning, agents, and systems that stay legible.",
-    text: "I like research that can survive contact with implementation. Benchmarks matter, but so do interfaces, workflows, and how people actually use the system.",
+    label: "House Notes",
+    title: "Research that reads softly, even when the ideas are difficult.",
+    text: "I like work on reasoning, agents, and system behavior that stays readable from benchmark to interface.",
   },
   {
-    label: "Writing",
-    title: "Notes with the texture of a lab diary, not a marketing page.",
-    text: "I write compact essays, field notes, and technical observations that keep nuance intact instead of polishing it away.",
+    label: "Journal",
+    title: "Writing with the pace of a quiet cafe afternoon.",
+    text: "Notes, essays, and technical fragments live here with enough room for ambiguity, texture, and unfinished thinking.",
   },
   {
-    label: "Code",
-    title: "Open-source tools with warm edges and practical defaults.",
-    text: "GitHub is where experiments become reusable. I prefer clear surfaces, light abstractions, and systems that remain pleasant to revisit.",
+    label: "Open Source",
+    title: "Tools with clean surfaces and a warm aftertaste.",
+    text: "I ship code that tries to stay practical, legible, and pleasant to return to after the novelty is gone.",
   },
 ];
 
-const menu = [
-  "Latte-fueled research",
-  "Multimodal reasoning",
-  "Agent evaluation",
-  "Readable interfaces",
+const houseMenu = [
+  "Vanilla oat latte",
+  "Reasoning systems",
+  "Gentle interfaces",
+  "Notebook essays",
+];
+
+const signaturePour = [
+  {
+    label: "Blend",
+    value: "Reasoning, agents, and systems design",
+  },
+  {
+    label: "Milk",
+    value: "Soft editorial rhythm with a feminine finish",
+  },
+  {
+    label: "Finish",
+    value: "Readable code, calm pages, and coffee warmth",
+  },
 ];
 
 export default function Home() {
@@ -37,26 +52,26 @@ export default function Home() {
             xcccy
           </a>
           <nav className="nav">
-            <a href="#notes">Notes</a>
-            <a href="#brew">Brew</a>
+            <a href="#notes">Menu</a>
+            <a href="#brew">Signature</a>
             <a href="#contact">Contact</a>
           </nav>
         </header>
 
         <div className="hero-layout">
           <div className="hero-copy">
-            <p className="eyebrow">Latte Lab for AI Research</p>
+            <p className="eyebrow">Boutique Coffeehouse for AI Research</p>
             <h1>
-              Soft milk,
+              Creamy light,
               <br />
-              dark espresso,
+              espresso warmth,
               <br />
-              <span>serious ideas.</span>
+              <span>and thoughtful systems.</span>
             </h1>
             <p className="lede">
-              A personal site for research, writing, and open-source work,
-              styled like a favorite cafe table: warm, composed, and quietly
-              caffeinated.
+              A personal studio for research, writing, and open-source work,
+              shaped like a favorite coffee shop menu: soft edges, delicate
+              detail, and a clear latte heart at the center.
             </p>
 
             <div className="hero-actions">
@@ -69,12 +84,12 @@ export default function Home() {
                 Visit GitHub
               </a>
               <a className="button button-secondary" href="#notes">
-                Read notes
+                Explore the menu
               </a>
             </div>
 
             <div className="menu-row">
-              {menu.map((item) => (
+              {houseMenu.map((item) => (
                 <span key={item}>{item}</span>
               ))}
             </div>
@@ -82,6 +97,11 @@ export default function Home() {
 
           <aside className="hero-art" aria-label="Latte illustration">
             <div className="latte-card">
+              <div className="bean bean-one" aria-hidden="true" />
+              <div className="bean bean-two" aria-hidden="true" />
+              <div className="bean bean-three" aria-hidden="true" />
+              <div className="ribbon ribbon-left" aria-hidden="true" />
+              <div className="ribbon ribbon-right" aria-hidden="true" />
               <div className="steam steam-one" aria-hidden="true" />
               <div className="steam steam-two" aria-hidden="true" />
               <div className="latte-cup" aria-hidden="true">
@@ -95,12 +115,18 @@ export default function Home() {
               </div>
 
               <div className="art-note art-note-top">
-                <p>House Special</p>
-                <strong>Research Latte</strong>
+                <p>House Blend</p>
+                <strong>Rose Latte No. 01</strong>
+              </div>
+
+              <div className="art-note art-note-middle">
+                <span>soft roast</span>
+                <strong>notes of vanilla, paper, and code</strong>
               </div>
 
               <div className="art-note art-note-bottom">
                 <span>oat milk</span>
+                <span>cinnamon dust</span>
                 <span>double shot</span>
               </div>
             </div>
@@ -110,12 +136,12 @@ export default function Home() {
 
       <section className="notes-section" id="notes">
         <div className="section-heading">
-          <p className="section-kicker">Brew Notes</p>
-          <h2>Technical work served with a little warmth.</h2>
+          <p className="section-kicker">Tasting Menu</p>
+          <h2>A softer, prettier coffeehouse frame for serious technical work.</h2>
         </div>
 
         <div className="card-grid">
-          {brewNotes.map((note) => (
+          {tastingNotes.map((note) => (
             <article className="note-card" key={note.label}>
               <p className="card-kicker">{note.label}</p>
               <h3>{note.title}</h3>
@@ -128,28 +154,23 @@ export default function Home() {
       <section className="brew-section" id="brew">
         <div className="brew-panel">
           <div className="brew-copy">
-            <p className="section-kicker">Current Pour</p>
-            <h2>Research that feels calm on the page, even when the problem is not.</h2>
+            <p className="section-kicker">Signature Pour</p>
+            <h2>A boutique cafe mood, with more coffee and a gentler feminine touch.</h2>
             <p>
-              The owner of this site likes lattes, so the design should carry a
-              little of that mood: soft foam, dark roast contrast, rounded cups,
-              and enough air between things to think clearly.
+              This version leans into what was missing before: more visible
+              coffee cues, softer cream-and-rose tones, menu language, rounded
+              forms, and enough quiet luxury to feel like a small specialty
+              cafe instead of a generic portfolio.
             </p>
           </div>
 
           <div className="brew-list">
-            <div>
-              <span>Blend</span>
-              <strong>Reasoning + systems design</strong>
-            </div>
-            <div>
-              <span>Flavor</span>
-              <strong>Warm, precise, quietly feminine</strong>
-            </div>
-            <div>
-              <span>Aftertaste</span>
-              <strong>Readable interfaces and usable code</strong>
-            </div>
+            {signaturePour.map((item) => (
+              <div key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -158,7 +179,7 @@ export default function Home() {
         <div className="contact-panel">
           <div className="section-heading">
             <p className="section-kicker">Contact</p>
-            <h2>For collaboration, writing, or a good research conversation.</h2>
+            <h2>For collaboration, writing, or a conversation over a good latte.</h2>
           </div>
 
           <div className="hero-actions">
