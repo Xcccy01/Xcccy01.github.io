@@ -1,86 +1,62 @@
-const focusAreas = [
+const highlights = [
+  {
+    tag: "Research Diary",
+    title: "Thinking about agents, reasoning, and what makes systems feel trustworthy.",
+    tone: "rose",
+  },
+  {
+    tag: "Open Source",
+    title: "Small tools, careful defaults, and code that stays readable after the demo.",
+    tone: "cream",
+  },
+  {
+    tag: "Writing",
+    title: "Lab notes, essays, and soft but sharp explanations of difficult ideas.",
+    tone: "mint",
+  },
+];
+
+const snippets = [
   "Multimodal reasoning",
   "Agent evaluation",
-  "Human-readable interfaces",
-];
-
-const researchRows = [
-  {
-    index: "01",
-    title: "Reasoning beyond benchmark comfort zones",
-    description:
-      "I am interested in how models behave once the task is underspecified, the evidence is messy, and reliability matters more than a leaderboard win.",
-  },
-  {
-    index: "02",
-    title: "Agents that stay useful under pressure",
-    description:
-      "I study planning, memory, and operational discipline in agentic workflows, especially where systems have to act over time instead of answering once.",
-  },
-  {
-    index: "03",
-    title: "Interfaces that explain complex model behavior",
-    description:
-      "Research gets more valuable when the surrounding interface preserves nuance. I care about surfaces that clarify instead of decorate.",
-  },
-];
-
-const outputRows = [
-  {
-    label: "Research",
-    title: "Experiments shaped by practical systems questions.",
-    description:
-      "I use implementation as part of the inquiry, not just a way to package the result.",
-  },
-  {
-    label: "Writing",
-    title: "Notes that compress ideas without flattening them.",
-    description:
-      "Field notes, essays, and compact explanations are part of how I keep the work legible.",
-  },
-  {
-    label: "Code",
-    title: "Open-source work with usable defaults and clean edges.",
-    description:
-      "GitHub is where rough prototypes become tools someone else can actually run.",
-  },
-];
-
-const principles = [
-  "Calm visual systems over AI-branding clichés.",
-  "Strong typography before decorative UI.",
-  "Motion that supports hierarchy, never competes with it.",
+  "Interface design",
+  "Research notes",
 ];
 
 export default function Home() {
   return (
     <main className="page-shell">
       <section className="hero" id="top">
-        <div className="hero-aura hero-aura-left" aria-hidden="true" />
-        <div className="hero-aura hero-aura-right" aria-hidden="true" />
+        <div className="hero-glow hero-glow-left" aria-hidden="true" />
+        <div className="hero-glow hero-glow-right" aria-hidden="true" />
 
         <header className="topbar">
           <a className="brand" href="#top">
-            Xcccy
+            xcccy
           </a>
           <nav className="nav">
-            <a href="#research">Research</a>
-            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#notes">Notes</a>
             <a href="#contact">Contact</a>
           </nav>
         </header>
 
         <div className="hero-layout">
           <div className="hero-copy">
-            <p className="eyebrow">AI Researcher</p>
+            <p className="eyebrow">AI Researcher · Cute Lab Edition</p>
             <h1>
-              Building AI systems with a research mindset and an editorial eye.
+              Building thoughtful
+              <br />
+              <span>AI things</span>
+              <br />
+              with a soft edge.
             </h1>
             <p className="lede">
-              I work on reasoning, agents, and the interfaces around them. This
-              site is designed as a quiet research studio rather than a crowded
-              portfolio.
+              I work on reasoning, agents, and human-readable systems. This
+              site is designed like a gentle research notebook: warm, clear,
+              and a little dreamy.
             </p>
+
             <div className="hero-actions">
               <a
                 className="button button-primary"
@@ -88,99 +64,84 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                Visit GitHub
               </a>
-              <a className="button button-secondary" href="#research">
-                Explore work
+              <a className="button button-secondary" href="#notes">
+                Read notes
               </a>
+            </div>
+
+            <div className="snippet-row">
+              {snippets.map((snippet) => (
+                <span key={snippet}>{snippet}</span>
+              ))}
             </div>
           </div>
 
-          <aside className="hero-aside">
-            <div className="hero-note">
-              <p className="section-label">Current focus</p>
-              <ul className="focus-list">
-                {focusAreas.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="hero-quote">
-              <p>
-                Research becomes more useful when the system, the explanation,
-                and the interface reinforce each other.
-              </p>
+          <aside className="hero-art" aria-hidden="true">
+            <div className="art-card art-card-back" />
+            <div className="art-card art-card-middle" />
+            <div className="art-card art-card-front">
+              <div className="art-sticker">lab memo</div>
+              <div className="art-orbit art-orbit-one" />
+              <div className="art-orbit art-orbit-two" />
+              <div className="art-core" />
+              <div className="art-footer">
+                <span>gentle systems</span>
+                <span>spring archive</span>
+              </div>
             </div>
           </aside>
         </div>
       </section>
 
-      <section className="signal-strip" aria-label="Design principles">
-        {principles.map((item) => (
-          <p key={item}>{item}</p>
-        ))}
-      </section>
-
-      <section className="section research" id="research">
-        <div className="section-intro">
-          <p className="section-label">Research</p>
-          <h2>Three threads define the way I work.</h2>
+      <section className="notes-section" id="about">
+        <div className="section-heading">
+          <p className="section-kicker">About</p>
+          <h2>A personal research site, but softer and prettier.</h2>
         </div>
 
-        <div className="research-list">
-          {researchRows.map((item) => (
-            <article className="research-row" key={item.title}>
-              <span className="row-index">{item.index}</span>
-              <div className="row-body">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
+        <div className="card-grid" id="notes">
+          {highlights.map((item) => (
+            <article className={`note-card note-card-${item.tone}`} key={item.title}>
+              <p className="card-kicker">{item.tag}</p>
+              <h3>{item.title}</h3>
             </article>
           ))}
+
+          <article className="note-card note-card-wide">
+            <p className="card-kicker">Approach</p>
+            <h3>
+              I like interfaces that feel calm even when the ideas behind them
+              are difficult.
+            </h3>
+            <p>
+              My work lives between research, implementation, and explanation.
+              The goal is never just to make a system function, but to make its
+              behavior understandable and worth returning to.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section className="section outputs" id="work">
-        <div className="section-intro">
-          <p className="section-label">Outputs</p>
-          <h2>Research, writing, and code are treated as one practice.</h2>
-        </div>
-
-        <div className="output-list">
-          {outputRows.map((item) => (
-            <article className="output-row" key={item.label}>
-              <p className="output-label">{item.label}</p>
-              <div className="output-copy">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section contact" id="contact">
-        <div className="contact-block">
-          <div className="section-intro">
-            <p className="section-label">Contact</p>
-            <h2>For research collaboration, thoughtful prototypes, or writing.</h2>
+      <section className="contact-section" id="contact">
+        <div className="contact-panel">
+          <div className="section-heading">
+            <p className="section-kicker">Contact</p>
+            <h2>For collaboration, writing, or quietly ambitious projects.</h2>
           </div>
 
           <div className="hero-actions">
+            <a className="button button-primary" href="mailto:hello@xcccy.site">
+              hello@xcccy.site
+            </a>
             <a
-              className="button button-primary"
+              className="button button-secondary"
               href="https://github.com/Xcccy01"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View GitHub
-            </a>
-            <a
-              className="button button-secondary"
-              href="mailto:hello@xcccy.site"
-            >
-              hello@xcccy.site
+              View repository
             </a>
           </div>
         </div>

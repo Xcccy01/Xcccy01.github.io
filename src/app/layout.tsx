@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Manrope, Newsreader } from "next/font/google";
+import { Cormorant_Garamond, M_PLUS_Rounded_1c } from "next/font/google";
 import "./globals.css";
 
-const sans = Manrope({
+const sans = M_PLUS_Rounded_1c({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
-const serif = Newsreader({
+const serif = Cormorant_Garamond({
   variable: "--font-serif",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html
+      lang="en"
+      className={`${sans.variable} ${serif.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
