@@ -15,9 +15,9 @@ const serif = Noto_Serif_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Xcccy | 猫狗咖啡乐园主页",
+  title: "Xcccy | 粉色学术风个人主页",
   description:
-    "粉色、多彩、带猫猫狗狗和咖啡动效的个人主页，占位展示研究、作品与写作内容。",
+    "参考学术主页结构重做的粉色个人主页，占位展示研究、项目、写作与联系方式。",
 };
 
 export default function RootLayout({
