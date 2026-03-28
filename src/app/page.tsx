@@ -1,3 +1,5 @@
+import { AmbientResearchField } from "@/components/ambient-research-field";
+
 export default function Home() {
   const focusAreas = [
     "Multimodal reasoning systems",
@@ -5,24 +7,45 @@ export default function Home() {
     "Evaluation, interpretability, and alignment",
   ];
 
+  const researchLanes = [
+    {
+      index: "01",
+      title: "Reasoning under ambiguity",
+      description:
+        "I study what happens when models leave clean benchmark conditions and have to preserve structure under uncertainty.",
+    },
+    {
+      index: "02",
+      title: "Agents with useful discipline",
+      description:
+        "I care about memory, task decomposition, and the operational limits of agentic systems in real workflows.",
+    },
+    {
+      index: "03",
+      title: "Interfaces for complex systems",
+      description:
+        "Research gets more useful when the surface is legible. I design interfaces that clarify behavior without flattening it.",
+    },
+  ];
+
   const selectedWorks = [
     {
-      title: "Research Practice",
-      label: "Method",
+      label: "Research Practice",
+      title: "Building experiments that produce decisions, not just artifacts.",
       description:
-        "I build experimental systems that turn papers, benchmarks, and model behavior into concrete design decisions.",
+        "My workflow links papers, evals, and implementation tightly enough that each prototype sharpens the next question.",
     },
     {
-      title: "Writing and Notes",
-      label: "Thinking",
+      label: "Writing and Notes",
+      title: "Keeping a running record of what works, fails, and changes my view.",
       description:
-        "I publish research notes, project retrospectives, and compact explanations of ideas worth keeping.",
+        "I like compact explanations, field notes, and writing that preserves the shape of an idea without dressing it up.",
     },
     {
-      title: "Open Source",
-      label: "Code",
+      label: "Open Source",
+      title: "Shipping tools in public with enough polish to be used.",
       description:
-        "My GitHub is where prototypes mature into tools, with clean interfaces and practical defaults.",
+        "GitHub is where exploratory systems become reusable code, with practical defaults and clear surfaces.",
     },
   ];
 
@@ -54,12 +77,13 @@ export default function Home() {
           <div className="hero-copy" id="top">
             <p className="eyebrow">AI Researcher · Builder · Writer</p>
             <h1>
-              Researching intelligent systems with a calm interface and a sharp
-              point of view.
+              I build AI research into systems that feel rigorous, useful, and
+              alive.
             </h1>
             <p className="lede">
-              I design experiments, build applied AI systems, and turn research
-              into tools that are legible, useful, and alive on the page.
+              A personal site for experiments, notes, and open-source work.
+              Warm editorial composition outside, hard technical questions
+              underneath.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="https://github.com/Xcccy01">
@@ -69,20 +93,16 @@ export default function Home() {
                 Explore research
               </a>
             </div>
+            <div className="hero-footnotes">
+              <span>Based in China</span>
+              <span>Open to research collaboration</span>
+              <span>Custom-built for GitHub Pages</span>
+            </div>
           </div>
 
-          <aside className="hero-panel" aria-label="Research focus">
-            <p className="panel-kicker">Current focus</p>
-            <ul className="focus-list">
-              {focusAreas.map((area) => (
-                <li key={area}>{area}</li>
-              ))}
-            </ul>
-            <div className="panel-foot">
-              <span>Open to collaboration</span>
-              <span>Based in China</span>
-            </div>
-          </aside>
+          <div className="hero-scene">
+            <AmbientResearchField labels={focusAreas} />
+          </div>
         </div>
       </section>
 
@@ -92,41 +112,55 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="section statement" id="research">
-        <div className="section-head">
-          <p className="section-label">Research</p>
-          <h2>
-            A personal site shaped like a research studio, not a resume page.
-          </h2>
-        </div>
-        <div className="statement-layout">
-          <p className="statement-copy">
-            My work sits between frontier model capabilities and practical
-            systems design. I care about how multimodal models reason, how
-            agents behave under pressure, and how interfaces can make complex
-            behavior feel intelligible.
-          </p>
-          <div className="stat-block">
-            <span>Practice</span>
-            <strong>Research, prototypes, field notes</strong>
+      <section className="section trajectory" id="research">
+        <div className="trajectory-grid">
+          <div className="trajectory-copy">
+            <p className="section-label">Research</p>
+            <h2>A personal site shaped like a working research surface.</h2>
+            <p className="statement-copy">
+              My work sits between frontier model capabilities and practical
+              systems design. I am interested in reasoning quality, agent
+              behavior, and interfaces that make complex systems easier to read.
+            </p>
+          </div>
+
+          <div className="trajectory-list">
+            {researchLanes.map((lane) => (
+              <article className="trajectory-item" key={lane.title}>
+                <span className="trajectory-index">{lane.index}</span>
+                <div>
+                  <h3>{lane.title}</h3>
+                  <p>{lane.description}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="section works" id="writing">
-        <div className="section-head">
-          <p className="section-label">Selected Tracks</p>
-          <h2>Three channels, one coherent body of work.</h2>
-        </div>
-        <div className="work-grid">
-          {selectedWorks.map((item, index) => (
-            <article className="work-card" key={item.title}>
-              <span className="work-index">0{index + 1}</span>
-              <p className="work-label">{item.label}</p>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
+      <section className="section journal" id="writing">
+        <div className="journal-grid">
+          <div className="journal-intro">
+            <p className="section-label">Selected Tracks</p>
+            <h2>Three channels, one body of work.</h2>
+            <p className="statement-copy">
+              Research, writing, and open source are treated here as connected
+              outputs rather than separate tabs in a portfolio.
+            </p>
+          </div>
+
+          <div className="journal-rows">
+            {selectedWorks.map((item, index) => (
+              <article className="journal-row" key={item.title}>
+                <span className="journal-index">0{index + 1}</span>
+                <div className="journal-body">
+                  <p className="journal-kicker">{item.label}</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -134,8 +168,8 @@ export default function Home() {
         <div className="manifesto-pane">
           <p className="section-label">Visual Thesis</p>
           <h2>
-            Warm neutrals, generous spacing, and restrained motion that feels
-            intentional in a screen recording.
+            A warmer, quieter alternative to glossy AI branding, with motion
+            that explains the mood instead of interrupting it.
           </h2>
         </div>
         <div className="manifesto-lines" aria-hidden="true">
@@ -146,27 +180,29 @@ export default function Home() {
       </section>
 
       <section className="section contact" id="contact">
-        <div className="section-head">
-          <p className="section-label">Contact</p>
-          <h2>For research collaboration, thoughtful prototypes, or writing.</h2>
-        </div>
-        <div className="contact-row">
-          <a
-            className="button button-primary"
-            href="https://github.com/Xcccy01"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            className="button button-secondary"
-            href="mailto:hello@xcccy.site"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hello@xcccy.site
-          </a>
+        <div className="contact-panel">
+          <div className="section-head">
+            <p className="section-label">Contact</p>
+            <h2>For research collaboration, thoughtful prototypes, or writing.</h2>
+          </div>
+          <div className="contact-row">
+            <a
+              className="button button-primary"
+              href="https://github.com/Xcccy01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="button button-secondary"
+              href="mailto:hello@xcccy.site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              hello@xcccy.site
+            </a>
+          </div>
         </div>
       </section>
     </main>
