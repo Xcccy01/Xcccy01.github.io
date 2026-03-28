@@ -15,9 +15,9 @@ const serif = Noto_Serif_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Xcccy | 咖啡馆风格个人主页",
+  title: "Xcccy | 猫狗咖啡乐园主页",
   description:
-    "一张带有拿铁气质的个人主页，占位展示研究、写作与开源内容。",
+    "粉色、多彩、带猫猫狗狗和咖啡动效的个人主页，占位展示研究、作品与写作内容。",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="zh-CN"
       className={`${sans.variable} ${serif.variable}`}
     >
       <body>{children}</body>

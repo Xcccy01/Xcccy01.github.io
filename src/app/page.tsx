@@ -1,212 +1,287 @@
-const menuTags = ["燕麦拿铁", "实验笔记", "多模态推理", "温柔界面"];
+const navLinks = [
+  { href: "#top", label: "回到封面" },
+  { href: "#showcase", label: "猫狗橱窗" },
+  { href: "#diary", label: "今日值班" },
+  { href: "#contact", label: "联系我" },
+];
 
-const menuItems = [
+const floatingBadges = [
   {
-    label: "今日特调",
-    title: "研究介绍占位",
-    text: "这里放站点主人的核心研究方向介绍。建议写成两三句话，像咖啡馆菜单里的招牌描述，简短但有记忆点。",
+    emoji: "🐱",
+    title: "奶油猫巡游",
+    text: "这里放一句首页气质描述占位，像一张会眨眼的粉色海报。",
+    className: "badge-cat",
   },
   {
-    label: "本周豆单",
-    title: "项目展示占位",
-    text: "这里放代表项目、正在做的实验、或者想重点展示的开源工作。文字先用中文占位，后面再替换成真实内容。",
+    emoji: "🐶",
+    title: "狗狗摇尾巴",
+    text: "这里放作品栏目占位，主打热闹、柔软、亲近感和一点夸张。",
+    className: "badge-dog",
   },
   {
-    label: "限定甜点",
-    title: "写作栏目占位",
-    text: "这一栏可以用来放随笔、博客、论文笔记或者学习札记，让页面像一本小册子，而不是普通的个人简历。",
+    emoji: "☕",
+    title: "咖啡冒泡泡",
+    text: "这里放近期更新占位，让整个页面像甜品柜台一样一眼就记住。",
+    className: "badge-coffee",
   },
 ];
 
-const noteColumns = [
+const featureNotes = [
   {
-    title: "店内便笺",
-    text: "这里适合放一句更柔和的自我介绍，比如你如何看待研究、如何写代码、或者为什么喜欢在温暖的视觉里讲严肃的问题。",
+    icon: "🎀",
+    title: "封面像海报",
+    text: "这里可以写站点主人是谁、在做什么、为什么这个主页不想长得像模板站。文字先保留中文占位，后续再替换真实内容。",
   },
   {
-    title: "橱窗公告",
-    text: "这里可以放近期更新、想做的主题、正在搭建的作品，保持一点手写便签的感觉，不要太像企业网站公告栏。",
+    icon: "🐾",
+    title: "栏目像贴纸墙",
+    text: "这里适合放项目、研究、博客或随笔。每一块内容都像被糖果胶带贴上去，强调鲜明个性，而不是中规中矩的信息栈。",
+  },
+  {
+    icon: "🌈",
+    title: "动效像游乐场",
+    text: "这里放一句风格说明占位。猫咪在漂、狗狗在晃、咖啡在冒热气，整个页面保持连续的轻盈动势。",
   },
 ];
 
-const footerLinks = [
+const shiftCards = [
+  {
+    time: "09:00",
+    title: "猫咪压住键盘",
+    text: "这里写今天的研究、开发、发呆、看资料或整理灵感的内容占位。",
+  },
+  {
+    time: "14:00",
+    title: "狗狗叼来新点子",
+    text: "这里写代表项目、开源尝试、视觉实验或者最近最想分享的一件作品。",
+  },
+  {
+    time: "21:00",
+    title: "咖啡泡泡继续发光",
+    text: "这里写博客、笔记、近况、联络方式或任何更轻一点的个人表达。",
+  },
+];
+
+const candyTags = [
+  "猫猫巡游",
+  "狗狗摆尾",
+  "莓果奶霜",
+  "粉色云朵",
+  "彩虹糖纸",
+  "奶泡星光",
+  "中文占位",
+];
+
+const contactLinks = [
   {
     label: "GitHub",
+    value: "@Xcccy01",
     href: "https://github.com/Xcccy01",
   },
   {
     label: "邮箱",
+    value: "hello@xcccy.site",
     href: "mailto:hello@xcccy.site",
   },
 ];
 
 export default function Home() {
   return (
-    <main className="page-shell">
-      <section className="hero" id="top">
-        <div className="hero-glow hero-glow-left" aria-hidden="true" />
-        <div className="hero-glow hero-glow-right" aria-hidden="true" />
-        <div className="coffee-stain coffee-stain-one" aria-hidden="true" />
-        <div className="coffee-stain coffee-stain-two" aria-hidden="true" />
+    <main className="candy-page">
+      <section className="hero-band" id="top">
+        <div className="hero-sugar hero-sugar-one" aria-hidden="true" />
+        <div className="hero-sugar hero-sugar-two" aria-hidden="true" />
+        <div className="hero-sugar hero-sugar-three" aria-hidden="true" />
 
-        <header className="topbar">
-          <a className="brand" href="#top">
-            xcccy
+        <header className="site-header">
+          <a className="site-mark" href="#top">
+            xcccy sweet house
           </a>
-          <nav className="nav">
-            <a href="#menu">菜单</a>
-            <a href="#notes">便笺</a>
-            <a href="#contact">联系</a>
+
+          <nav className="site-nav" aria-label="页面导航">
+            {navLinks.map((item) => (
+              <a href={item.href} key={item.label}>
+                {item.label}
+              </a>
+            ))}
           </nav>
         </header>
 
-        <div className="hero-grid">
-          <aside className="hero-rail">
-            <p className="rail-kicker">今日菜单</p>
-            <div className="rail-special">
-              <span>店长推荐</span>
-              <strong>燕麦云朵拿铁</strong>
-              <p>适合把研究、写作与代码一起放在温柔光线里展示。</p>
-            </div>
-
-            <div className="rail-tags">
-              {menuTags.map((item) => (
-                <span key={item}>{item}</span>
-              ))}
-            </div>
-          </aside>
-
+        <div className="hero-inner">
           <div className="hero-copy">
-            <p className="eyebrow">中文占位 · 精品咖啡馆风格主页</p>
-            <h1>
-              把个人主页
+            <p className="hero-kicker">粉色为主 · 猫狗咖啡动效主页 · 中文占位</p>
+            <h1 className="hero-title">
+              让个人主页
               <br />
-              做成一间
+              变成一座
               <br />
-              <span>奶咖色的小咖啡馆</span>
+              <span>会冒泡泡的宠物咖啡乐园</span>
             </h1>
-            <p className="lede">
-              这里先用中文占位排版，模拟首页首屏的正式内容。整体方向不再是常规卡片站，而是一张像精品咖啡店海报与菜单册页混合起来的首页。
+            <p className="hero-lede">
+              这里先放中文占位文案，模拟正式首页内容。整体不走克制理性路线，而是把猫猫、狗狗、咖啡、糖果色和轻快动效全部堆到第一屏，做成一张可以直接当封面的动态海报。
             </p>
 
             <div className="hero-actions">
               <a
-                className="button button-primary"
+                className="hero-button hero-button-primary"
                 href="https://github.com/Xcccy01"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                查看 GitHub
+                进入 GitHub
               </a>
-              <a className="button button-secondary" href="#menu">
-                看首页结构
+              <a className="hero-button hero-button-secondary" href="#showcase">
+                看橱窗内容
               </a>
+            </div>
+
+            <div className="hero-chip-row" aria-label="风格标签">
+              {candyTags.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
           </div>
 
-          <aside className="menu-board" aria-label="咖啡馆海报样式展示">
-            <div className="board-card">
-              <p className="board-kicker">店内海报</p>
-              <h2>拿铁 01</h2>
-              <p className="board-copy">
-                奶泡、纸张、木色与柔和留白，作为整个首页的主视觉基调。
-              </p>
-
-              <div className="latte-stage" aria-hidden="true">
-                <div className="steam steam-one" />
-                <div className="steam steam-two" />
-                <div className="latte-cup">
-                  <div className="latte-foam">
-                    <div className="foam-heart foam-heart-left" />
-                    <div className="foam-heart foam-heart-right" />
-                    <div className="foam-leaf foam-leaf-top" />
-                    <div className="foam-leaf foam-leaf-bottom" />
-                  </div>
-                  <div className="cup-handle" />
-                </div>
-              </div>
-
-              <div className="board-meta">
-                <span>燕麦奶</span>
-                <span>双份浓缩</span>
-                <span>肉桂粉</span>
-              </div>
+          <div className="hero-stage" aria-label="猫狗和咖啡的动态主视觉">
+            <div className="star-spark star-spark-one" aria-hidden="true">
+              ✦
             </div>
-          </aside>
-        </div>
+            <div className="star-spark star-spark-two" aria-hidden="true">
+              ♡
+            </div>
+            <div className="star-spark star-spark-three" aria-hidden="true">
+              ✿
+            </div>
 
-        <div className="ticker" aria-label="首页标签">
-          {menuTags.map((item) => (
-            <span key={item}>{item}</span>
-          ))}
-        </div>
-      </section>
+            <div className="paw-trail" aria-hidden="true">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <span
+                  key={`paw-${index}`}
+                  style={{ animationDelay: `${index * 160}ms` }}
+                />
+              ))}
+            </div>
 
-      <section className="menu-section" id="menu">
-        <div className="section-heading">
-          <p className="section-kicker">首页结构</p>
-          <h2>彻底换成海报式布局，而不是一排排普通模块。</h2>
-        </div>
+            <div className="sticker sticker-cat" aria-hidden="true">
+              <span>🐱</span>
+              <em>喵</em>
+            </div>
 
-        <div className="menu-layout">
-          <div className="menu-lead">
-            <p>
-              这一块是首页第二屏的大段中文占位。它不再像产品官网那样先堆三张卡，而是像菜单内页，先给出一个气质明确的引导段，再展开几个重点栏目。
-            </p>
-          </div>
+            <div className="sticker sticker-dog" aria-hidden="true">
+              <span>🐶</span>
+              <em>汪</em>
+            </div>
 
-          <div className="menu-list">
-            {menuItems.map((item) => (
-              <article className="menu-entry" key={item.label}>
-                <p className="entry-kicker">{item.label}</p>
-                <h3>{item.title}</h3>
+            <div className="sticker sticker-heart" aria-hidden="true">
+              <span>💗</span>
+            </div>
+
+            <div className="coffee-float" aria-hidden="true">
+              <div className="steam steam-left" />
+              <div className="steam steam-right" />
+              <div className="coffee-foam">♡</div>
+            </div>
+
+            {floatingBadges.map((item, index) => (
+              <article
+                className={`floating-badge ${item.className}`}
+                key={item.title}
+                style={{ animationDelay: `${index * 0.8}s` }}
+              >
+                <span className="badge-emoji" aria-hidden="true">
+                  {item.emoji}
+                </span>
+                <strong>{item.title}</strong>
                 <p>{item.text}</p>
               </article>
             ))}
           </div>
         </div>
+
+        <div className="marquee" aria-label="循环装饰条">
+          <div className="marquee-track">
+            {candyTags.concat(candyTags).map((item, index) => (
+              <span key={`${item}-${index}`}>{item}</span>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section className="notes-section" id="notes">
-        <div className="notes-paper">
+      <section className="showcase-section" id="showcase">
+        <div className="section-shell">
           <div className="section-heading">
-            <p className="section-kicker">手写便笺</p>
-            <h2>给严肃内容留一点软边、留白和纸张感。</h2>
+            <p>猫狗橱窗</p>
+            <h2>让每一块信息都像被糖果胶带贴在玻璃上，热闹、可爱、带一点夸张。</h2>
           </div>
 
-          <div className="notes-columns">
-            {noteColumns.map((item) => (
-              <article className="note-strip" key={item.title}>
+          <div className="feature-grid">
+            {featureNotes.map((item, index) => (
+              <article className={`feature-note feature-note-${index + 1}`} key={item.title}>
+                <span className="feature-icon" aria-hidden="true">
+                  {item.icon}
+                </span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="diary-section" id="diary">
+        <div className="section-shell diary-layout">
+          <div className="diary-poster">
+            <p className="poster-kicker">今日值班表</p>
+            <h2>研究、作品、写作、近况，都先藏在一张猫狗咖啡轮班单里。</h2>
+
+            <div className="shift-list">
+              {shiftCards.map((item) => (
+                <article className="shift-card" key={item.time}>
+                  <span className="shift-time">{item.time}</span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="diary-copy">
+            <p className="poster-kicker">手账贴纸页</p>
+            <h2>这里放更轻的自我介绍，占位文字也要保留一点软绵绵的空气感。</h2>
+            <p className="diary-text">
+              可以在这里写个人简介、兴趣、研究方向、做站原因，或者一句会让访客记住你的自我描述。现在先用中文占位，把节奏、留白和情绪做出来，之后再逐段替换真实内容。
+            </p>
+
+            <div className="mini-stickers" aria-label="装饰贴纸">
+              <span>🐾 小猫监督中</span>
+              <span>🎀 小狗开心转圈</span>
+              <span>☕ 奶泡持续上升</span>
+              <span>🌈 页面保持高饱和</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="contact-section" id="contact">
-        <div className="contact-layout">
+        <div className="section-shell contact-panel">
           <div className="contact-copy">
-            <p className="section-kicker">联系窗口</p>
-            <h2>这里放联系方式、合作邀请，或者一句适合写在店门口的小招呼。</h2>
+            <p>联系窗口</p>
+            <h2>最后留一个像甜品收银台一样醒目的出口，用来放联系方式和邀请。</h2>
           </div>
 
           <div className="contact-links">
-            {footerLinks.map((item) => (
+            {contactLinks.map((item) => (
               <a
                 className="contact-link"
                 href={item.href}
                 key={item.label}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={
-                  item.href.startsWith("http")
-                    ? "noopener noreferrer"
-                    : undefined
-                }
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
               >
                 <span>{item.label}</span>
-                <strong>{item.label === "邮箱" ? "hello@xcccy.site" : "@Xcccy01"}</strong>
+                <strong>{item.value}</strong>
               </a>
             ))}
           </div>
