@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
 
-const sans = Manrope({
+const sans = Noto_Sans_SC({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const serif = Fraunces({
+const serif = Noto_Serif_SC({
   variable: "--font-serif",
   subsets: ["latin"],
-  style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Xcccy | AI Researcher",
+  title: "Xcccy | 咖啡馆风格个人主页",
   description:
-    "A dynamic personal site for Xcccy, featuring research, writing, and experimental AI systems.",
+    "一张带有拿铁气质的个人主页，占位展示研究、写作与开源内容。",
 };
 
 export default function RootLayout({
