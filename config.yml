@@ -7,6 +7,12 @@ enableRobotsTXT: true
 pagination:
   pagerSize: 20
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 taxonomies:
   tag: tags
 
@@ -24,18 +30,21 @@ menu:
     - name: Data
       url: data/
       weight: 4
+    - name: Search
+      url: search/
+      weight: 6
     - name: GitHub
       url: https://github.com/Xcccy01
-      weight: 6
+      weight: 7
 
 params:
-  description: "这里先放首页中文占位，后续展示研究、项目、写作与联系信息。"
+  description: "Xcccy 的个人网站 — AI、LLM 与 Web 全栈方向的研究、项目与学习记录。"
   author: Xcccy
   # googleAnalyticsID: "G-XXXXX"
   DateFormat: "January 2006"
-  defaultTheme: light
+  defaultTheme: auto
   hideFooter: false
-  disableThemeToggle: true
+  disableThemeToggle: false
   ShowShareButtons: false
   ShowReadingTime: false
   disableSpecial1stPost: true
@@ -46,7 +55,8 @@ params:
   ShowAllPagesInArchive: false
   MainSections: ["books", "courses", "papers", "data"]
   ShowToc: false
-  disableScrollToTop: true
+  disableScrollToTop: false
+  keywords: ["Xcccy", "AI", "LLM", "Web 全栈", "个人网站", "研究", "开源"]
   TocOpen: true
   ShowWordCount: false
   UseHugoToc: true
@@ -54,8 +64,8 @@ params:
   math: false
   profileMode:
     enabled: true
-    title: Xcccy
-    subtitle: "四川成都本科生。研究方向是 AI、LLM 和 Web 全栈，目前有一个 GitHub 开源作品，也喜欢喝拿铁。这里先用中文句子占位，后续再逐步替换成正式首页介绍。"
+    title: Xcccy.site
+    subtitle: ""
     imageUrl: "picture.jpeg"
     imageWidth: 160
     imageHeight: 160

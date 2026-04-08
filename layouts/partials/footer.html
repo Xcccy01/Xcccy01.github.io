@@ -1,23 +1,12 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    {{- if not site.Params.footer.hideCopyright }}
-    {{- if site.Copyright }}
-    <span>{{ site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} {{ site.Title }}</span>
-    {{- end }}
-    {{- print " · "}}
-    {{- end }}
-
+    <span class="footer-proverb">重剑无锋，大巧不工</span>
+    <br>
+    <span class="footer-proverb-en">The heaviest sword has no edge; the greatest skill appears effortless.</span>
     {{- with site.Params.footer.text }}
-    {{ . | markdownify }}
     {{- print " · "}}
-    {{- end }}    
-    <span>
-    Made with 
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
-        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
-    </span>
+    {{ . | markdownify }}
+    {{- end }}
 </footer>
 {{- end }}
 

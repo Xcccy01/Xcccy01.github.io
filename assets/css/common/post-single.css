@@ -75,8 +75,15 @@
 .post-content a,
 .post-meta a,
 .toc a:hover {
-    box-shadow: 0 2px 0 var(--darkcolor);
-    color: currentColor; 
+    box-shadow: 0 2px 0 var(--link-color);
+    color: var(--link-color);
+    transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-content a:hover,
+.post-meta a:hover {
+    color: var(--link-hover);
+    box-shadow: 0 2px 0 var(--link-hover);
 }
 
 .post-content a code {
