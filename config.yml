@@ -30,12 +30,15 @@ menu:
     - name: Data
       url: data/
       weight: 4
+    - name: LLM 可视化
+      url: llm/
+      weight: 6
     - name: Search
       url: search/
-      weight: 6
+      weight: 7
     - name: GitHub
       url: https://github.com/Xcccy01
-      weight: 7
+      weight: 8
 
 params:
   description: "Xcccy 的个人网站 — AI、LLM 与 Web 全栈方向的研究、项目与学习记录。"
@@ -84,6 +87,8 @@ params:
         url: archive/
       - name: GitHub
         url: https://github.com/Xcccy01
+      - name: LLM 可视化
+        url: llm/
 
   socialIcons:
     - name: Email

@@ -23,10 +23,10 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            <img draggable="false" src="{{ $img.RelPermalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+        <img draggable="false" src="{{ .imageUrl | relURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         {{- end }}
@@ -37,7 +37,9 @@
         {{- with .buttons }}
         <div class="buttons">
             {{- range . }}
-            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+            {{- $isFeaturedLine := eq .name "LLM 可视化" }}
+            {{- if $isFeaturedLine }}<span class="button-line-break" aria-hidden="true"></span>{{ end }}
+            <a class="button{{ if $isFeaturedLine }} button-featured-line{{ end }}" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
                 <span class="button-inner">
                     {{ .name }}
                     {{- if (findRE "://" .url) }}&nbsp;
@@ -50,6 +52,7 @@
                     {{- end }}
                 </span>
             </a>
+            {{- if $isFeaturedLine }}<span class="button-line-break" aria-hidden="true"></span>{{ end }}
             {{- end }}
         </div>
         {{- end }}
