@@ -418,14 +418,16 @@ button#theme-toggle:hover {
     display: block;
     width: 190px;
     height: 190px;
-    background-image: url("/hedgehog-sprite-v3.png");
+    background-image: url("/hedgehog-sprite-v3.png?v=20260727-mobile");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 400% 400%;
+    background-size: 760px 760px;
     transform-origin: 50% 84%;
     user-select: none;
     pointer-events: none;
     will-change: transform, background-position;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: transform 180ms cubic-bezier(0.22, 0.8, 0.35, 1);
     animation: hedgehogWalkFrames 0.76s steps(1, end) infinite;
 }
@@ -465,13 +467,13 @@ button#theme-toggle:hover {
 
 @keyframes hedgehogWalkFrames {
     0% { background-position: 0 0; }
-    12.5% { background-position: 33.333% 0; }
-    25% { background-position: 66.667% 0; }
-    37.5% { background-position: 100% 0; }
-    50% { background-position: 0 33.333%; }
-    62.5% { background-position: 33.333% 33.333%; }
-    75% { background-position: 66.667% 33.333%; }
-    87.5% { background-position: 100% 33.333%; }
+    12.5% { background-position: -190px 0; }
+    25% { background-position: -380px 0; }
+    37.5% { background-position: -570px 0; }
+    50% { background-position: 0 -190px; }
+    62.5% { background-position: -190px -190px; }
+    75% { background-position: -380px -190px; }
+    87.5% { background-position: -570px -190px; }
     100% { background-position: 0 0; }
 }
 
@@ -488,21 +490,21 @@ button#theme-toggle:hover {
 
 @keyframes hedgehogSideHopFrames {
     0% { background-position: 0 0; }
-    6.25% { background-position: 33.333% 0; }
-    12.5% { background-position: 66.667% 0; }
-    18.75% { background-position: 100% 0; }
-    25% { background-position: 0 33.333%; }
-    31.25% { background-position: 33.333% 33.333%; }
-    37.5% { background-position: 66.667% 33.333%; }
-    43.75% { background-position: 100% 33.333%; }
+    6.25% { background-position: -190px 0; }
+    12.5% { background-position: -380px 0; }
+    18.75% { background-position: -570px 0; }
+    25% { background-position: 0 -190px; }
+    31.25% { background-position: -190px -190px; }
+    37.5% { background-position: -380px -190px; }
+    43.75% { background-position: -570px -190px; }
     50% { background-position: 0 0; }
-    56.25% { background-position: 33.333% 0; }
-    62.5% { background-position: 66.667% 0; }
-    68.75% { background-position: 100% 0; }
-    75% { background-position: 0 33.333%; }
-    81.25% { background-position: 33.333% 33.333%; }
-    87.5% { background-position: 66.667% 33.333%; }
-    93.75% { background-position: 100% 33.333%; }
+    56.25% { background-position: -190px 0; }
+    62.5% { background-position: -380px 0; }
+    68.75% { background-position: -570px 0; }
+    75% { background-position: 0 -190px; }
+    81.25% { background-position: -190px -190px; }
+    87.5% { background-position: -380px -190px; }
+    93.75% { background-position: -570px -190px; }
     100% { background-position: 0 0; }
 }
 
@@ -608,14 +610,14 @@ button#theme-toggle:hover {
 }
 
 @keyframes hedgehogJumpFrames {
-    0% { background-position: 0 66.667%; }
-    12.5% { background-position: 33.333% 66.667%; }
-    25% { background-position: 66.667% 66.667%; }
-    37.5% { background-position: 100% 66.667%; }
-    50% { background-position: 0 100%; }
-    62.5% { background-position: 33.333% 100%; }
-    75% { background-position: 66.667% 100%; }
-    87.5%, 100% { background-position: 100% 100%; }
+    0% { background-position: 0 -380px; }
+    12.5% { background-position: -190px -380px; }
+    25% { background-position: -380px -380px; }
+    37.5% { background-position: -570px -380px; }
+    50% { background-position: 0 -570px; }
+    62.5% { background-position: -190px -570px; }
+    75% { background-position: -380px -570px; }
+    87.5%, 100% { background-position: -570px -570px; }
 }
 
 @keyframes hedgehogJumpMotion {
@@ -1645,6 +1647,10 @@ button#theme-toggle:hover {
         transform: scale(0.9);
         margin-top: -12px;
         margin-bottom: -18px;
+    }
+
+    .portrait-glass::before {
+        filter: none;
     }
 
     .portrait-chip-top {
