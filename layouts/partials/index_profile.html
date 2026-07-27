@@ -309,6 +309,62 @@
 })();
 
 (function () {
+    var character = document.querySelector(".portrait-character");
+    if (!character) return;
+
+    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var mobileViewport = window.matchMedia("(max-width: 620px)").matches;
+    var touchDevice = navigator.maxTouchPoints > 0;
+    if (reducedMotion || (!mobileViewport && !touchDevice)) return;
+
+    var frames = [
+        "0 0",
+        "-190px 0",
+        "-380px 0",
+        "-570px 0",
+        "0 -190px",
+        "-190px -190px",
+        "-380px -190px",
+        "-570px -190px"
+    ];
+    var frameIndex = 0;
+    var walkTimer = 0;
+
+    function advanceFrame() {
+        if (character.classList.contains("is-jumping")) return;
+        character.style.backgroundPosition = frames[frameIndex];
+        frameIndex = (frameIndex + 1) % frames.length;
+    }
+
+    function startWalking() {
+        if (walkTimer || document.hidden) return;
+        character.classList.add("is-js-mobile-walk");
+        advanceFrame();
+        walkTimer = window.setInterval(advanceFrame, 95);
+    }
+
+    function stopWalking() {
+        window.clearInterval(walkTimer);
+        walkTimer = 0;
+    }
+
+    var sprite = new Image();
+    sprite.onload = startWalking;
+    sprite.onerror = startWalking;
+    sprite.src = "/hedgehog-sprite-v3.png?v=20260728-edge";
+    if (sprite.complete) startWalking();
+
+    document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+            stopWalking();
+        } else {
+            startWalking();
+        }
+    });
+    window.addEventListener("pagehide", stopWalking, { once: true });
+})();
+
+(function () {
     var carousel = document.querySelector(".featured-carousel");
     if (!carousel) return;
 

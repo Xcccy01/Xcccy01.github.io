@@ -418,7 +418,7 @@ button#theme-toggle:hover {
     display: block;
     width: 190px;
     height: 190px;
-    background-image: url("/hedgehog-sprite-v3.png?v=20260727-mobile");
+    background-image: url("/hedgehog-sprite-v3.png?v=20260728-edge");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 760px 760px;
@@ -652,6 +652,10 @@ button#theme-toggle:hover {
     animation:
         hedgehogJumpFrames 0.96s steps(1, end) both,
         hedgehogJumpMotion 0.96s linear both;
+}
+
+.portrait-character.is-js-mobile-walk:not(.is-jumping) {
+    animation: none;
 }
 
 .portrait-glass:has(.portrait-character.is-jumping) .portrait-ground-shadow {
