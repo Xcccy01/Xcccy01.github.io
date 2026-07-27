@@ -1,5 +1,6 @@
 baseURL: "https://xcccy.site/"
 title: Xcccy
+locale: zh-CN
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -43,6 +44,7 @@ menu:
 params:
   description: "Xcccy 的个人网站 — AI、LLM 与 Web 全栈方向的研究、项目与学习记录。"
   author: Xcccy
+  images: ["og-cover.png"]
   # googleAnalyticsID: "G-XXXXX"
   DateFormat: "January 2006"
   defaultTheme: auto
